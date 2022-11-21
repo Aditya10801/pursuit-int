@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <a href="INDEX.HTML">      <img src="images/logomain.png"> </a>
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+     
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="about.html" class="mr-5 hover:text-white">About PIS</a>
+            <a href="results.html" class="mr-5 hover:text-white">Crème de la Crème</a>
+            <a href="admission.html" class="mr-5 hover:text-white">Admissions</a>
+            <a href="PIS.html" class="mr-5 hover:text-white">Life at PIS</a>
+
+          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Student Login
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <form id="login">
+        <div class="bg-gray-900">
+            <div class="container mx-auto bg-gray-900 rounded">
+                <div class="xl:w-full border-b border-gray-300  py-5  bg-gray-900">
+                    <div class="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
+                        <p class="text-lg text-gray-800 dark:text-gray-100 font-bold">Admission Application</p>
+                        
+                    </div>
+                </div>
+               
+                           
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto bg-gray-800 mt-10 rounded px-4">
+                <div class="xl:w-full border-b border-gray-300 dark:border-gray-700 py-5">
+                    <div class="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
+                        <p class="text-lg text-gray-800 dark:text-gray-100 font-bold">Student's<s></s> Information</p>
+                        <div class="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
+                            <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4.svg" alt="info">
+                            <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4dark.svg" alt="info">
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto pt-4">
+                    <div class="container mx-auto">
+                        <form class="my-6 w-11/12 mx-auto xl:w-full xl:mx-0">
+                            <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                <label for="FirstName" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">First Name</label>
+                                <input tabindex="0" type="text" id="FirstName" name="firstName" required class="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-600 dark:text-gray-400" placeholder="" />
+                            </div>
+                            <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                <label for="LastName" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">Last Name</label>
+                                <input tabindex="0" type="text" id="LastName" name="lastName" required class="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-600 dark:text-gray-400" placeholder="" />
+                            </div>
+                            <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                <label for="Email" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">Parent / Guardian's Email</label>
+                                
+                                    <input tabindex="0" type="text" id="Email" name="email" required class="border bg-transparent border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-600 dark:text-gray-400" placeholder="for eg- example@gmail.com" />
+                                </div>
+                               
+                            </div>
+                            <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                <label for="StreetAddress" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">Address</label>
+                                <input tabindex="0" type="text" id="StreetAddress" name="streetAddress" required class="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded bg-transparent text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-600 dark:text-gray-400" placeholder="for eg- Sec-24 Rohini" />
+                            </div>
+                            <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                <label for="City" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">City</label>
+                                <div class="border border-gray-300 dark:border-gray-700 shadow-sm rounded flex">
+                                    <input tabindex="0" type="text" id="City" name="city" required class="pl-3 py-3 w-full text-sm focus:outline-none border border-transparent focus:border-indigo-700 bg-transparent rounded placeholder-gray-500 text-gray-600 dark:text-gray-400" placeholder="for eg- New Delhi" />
+                                    <div class="px-4 flex items-center border-l border-gray-300 dark:border-gray-700 flex-col justify-center text-gray-600 dark:text-gray-400">
+                                       <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg5.svg" alt="up">
+                                       <img class="dark:hidden transform rotate-180" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg5.svg" alt="down">
+                                       <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg5dark.svg" alt="up">
+                                       <img class="dark:block hidden transform rotate-180" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg5dark.svg" alt="down">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                <label for="State/Province" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">State/Province</label>
+                                <input tabindex="0" type="text" id="State/Province" name="state" required class="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-600 dark:text-gray-400" placeholder="for eg- Delhi" />
+                            </div>
+                            <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                <label for="Country" class="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100">Country</label>
+                                <input tabindex="0" type="text" id="Country" name="country" required class="border bg-transparent border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-600 dark:text-gray-400" placeholder="for eg- India" />
+                            </div>
+                            <div class="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
+                                <div class="flex items-center pb-2">
+                                    <label for="ZIP" class="text-sm font-bold text-gray-800 dark:text-gray-100">ZIP/Postal Code</label>
+                                    <div class="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
+                                        <img class="dark:hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4.svg" alt="info">
+                                        <img class="dark:block hidden" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg4dark.svg" alt="info">
+                                    </div>
+                                </div>
+                                <input tabindex="0" type="text" name="zip" required id="ZIP" class="border bg-transparent border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-600 dark:text-gray-400" placeholder="for eg- 110034" />
+                                <div class="flex justify-between items-center pt-1 text-red-700">
+                                   
+                                   
+                                </div>
+                            </div>
+                            <button class="inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded">Submit Form</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </form>
+    <style>
+        .checkbox:checked {
+            /* Apply class right-0*/
+            right: 0;
+        }
+        .checkbox:checked + .toggle-label {
+            /* Apply class bg-indigo-700 */
+            background-color: #4c51bf;
+        }
+    </style>
+    
+    
+
+      <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Admissions</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white">Check Vacancy</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Fill Admission Form</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Check Status</a>
+                </li>
+               
+              </nav>
+            </div>
+            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">About PIS</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white">Infrastructure</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white"> Extra - Curricular Activities </a>
+                </li>
+               
+              </nav>
+            </div>
+            <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Life At PIS</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white">Theatreama</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white">Student Bodies</a>
+                </li>
+               
+              </nav>
+            </div>
+           
+        </div>
+        <div class="border-t border-gray-800">
+          <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+            <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+              <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+                <label for="footer-field" class="leading-7 text-sm text-gray-400">Would you like to receive our annual newsletter 'AURORA' ?</label>
+                <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:ring-2 focus:ring-pink-900 focus:bg-transparent focus:border-pink-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+              <button class="inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded">Enroll to the mailing list</button>
+              
+            </div>
+            <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+              <a class="text-gray-400">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-400">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-400">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-400">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="bg-gray-800 bg-opacity-75">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-400 text-sm text-center sm:text-left">© 2022 Pursuit International School —
+             
+            </p>
+            <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-400 text-sm">Made with ❤️ by team XINO</span>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
